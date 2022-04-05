@@ -4,10 +4,9 @@ Provide trading technical indicator values based on market data of almost crypto
 
 ## Installation
 
-Comming soon
-
+`$ npm install cryptocurrency-trading-indicators`
 ## Available Indicators
-Bollinger bands, EMA, IchimokuCloud, MACD, MFI, OBV, RSI, SMA, Stochastic RSI, WMA
+Boilinger Bands, EMA, MACD, RSI, SMA, WMA
 
 ## Supported exchanges
   - https://github.com/ccxt/ccxt#certified-cryptocurrency-exchanges
@@ -43,7 +42,7 @@ Bollinger bands, EMA, IchimokuCloud, MACD, MFI, OBV, RSI, SMA, Stochastic RSI, W
     - period: integer
     - ohlcvType: OHLCV_TYPE
 ```javascript
-  let emaData = await indicators.EMA(8, OHLCV_TYPE.O)
+  const emaData = await indicators.EMA(8, OHLCV_TYPE.O)
   console.log(emaData)
 ```
 
@@ -52,7 +51,7 @@ Bollinger bands, EMA, IchimokuCloud, MACD, MFI, OBV, RSI, SMA, Stochastic RSI, W
     - period: integer
     - ohlcvType: OHLCV_TYPE
 ```javascript
-  let smaData = await indicators.SMA(8, OHLCV_TYPE.O)
+  const smaData = await indicators.SMA(8, OHLCV_TYPE.O)
   console.log(smaData)
 ```
 
@@ -61,6 +60,6 @@ Bollinger bands, EMA, IchimokuCloud, MACD, MFI, OBV, RSI, SMA, Stochastic RSI, W
     - period: integer
     - ohlcvType: OHLCV_TYPE
 ```javascript
-  let rsiData = await indicators.RSI(14, OHLCV_TYPE.O)
+  const rsiData = await indicators.RSI(14, OHLCV_TYPE.O)
   console.log(rsiData)
 ```
