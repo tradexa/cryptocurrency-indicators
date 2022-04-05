@@ -1,6 +1,6 @@
 {
   "name": "cryptocurrency-trading-indicators",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A typescript starter for building javascript libraries and projects",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,6 +23,7 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "prepublish": "yarn build",
     "test": "jest",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts ."
   },
