@@ -1,0 +1,47 @@
+{
+  "name": "cryptocurrency-trading-indicators",
+  "version": "1.0.0",
+  "description": "A typescript starter for building javascript libraries and projects",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": "https://github.com/tradexa/cryptocurrency-trading-indicators.git",
+  "author": "stellantilet <stellantilet@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "starter",
+    "template",
+    "boilerplate",
+    "library",
+    "node",
+    "typedoc",
+    "eslint",
+    "standard-version"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "jest",
+    "lint": "eslint --ignore-path .eslintignore --ext .js,.ts ."
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "ccxt": "^1.78.4",
+    "technicalindicators": "^3.1.0"
+  }
+}
