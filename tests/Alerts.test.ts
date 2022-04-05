@@ -1,4 +1,4 @@
-import { Alerts } from './index'
+import { Alerts } from '../src/index'
 
 describe('Alerts', () => {
   let smaCross: Alerts.Cross
