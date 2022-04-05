@@ -1,5 +1,5 @@
 import { OHLCV_TYPE } from './Enums'
-import Indicators from './Indicators'
+import { Indicators } from './index'
 
 describe('Indicators', () => {
   let indicators: Indicators
