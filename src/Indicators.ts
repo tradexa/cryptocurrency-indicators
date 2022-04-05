@@ -14,12 +14,12 @@ class Indicators {
 
   constructor (
     exchangeId: string,
-    pair: string,
+    symbol: string,
     interval: string,
     isFuture = false
   ) {
     this.exchangeId = exchangeId
-    this.symbol = pair
+    this.symbol = symbol
     this.interval = interval
     this.isFuture = isFuture
     this._getExchange()

@@ -18,13 +18,29 @@ Comming soon
   const indicators = new Indicators("binance", "BTC/USDT", "15m", true)
 ```
 
-### EMA
+### EMA (Exponential Moving Average)
+  - Parameters:
+    - period: integer
+    - ohlcvType: OHLCV_TYPE
+```javascript
+  let emaData = await indicators.EMA(8, OHLCV_TYPE.O)
+  console.log(emaData)
+```
 
- ### EMA (Exponential Moving Average)
-   - Parameters:
-      - period: integer
-      - ohlcvType: OHLCV_TYPE
-  ```javascript
-    let emaData = await indicators.EMA(8, OHLCV_TYPE.O)
-    console.log(emaData[emaData.length - 1])
-  ```
+### SMA (Simple Moving Average)
+  - Parameters:
+    - period: integer
+    - ohlcvType: OHLCV_TYPE
+```javascript
+  let smaData = await indicators.SMA(8, OHLCV_TYPE.O)
+  console.log(smaData)
+```
+
+### RSI
+  - Parameters:
+    - period: integer
+    - ohlcvType: OHLCV_TYPE
+```javascript
+  let rsiData = await indicators.RSI(14, OHLCV_TYPE.O)
+  console.log(rsiData)
+```
